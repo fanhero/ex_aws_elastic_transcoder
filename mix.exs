@@ -35,7 +35,7 @@ defmodule ExAws.ElasticTranscoder.Mixfile do
   defp ex_aws() do
     case System.get_env("AWS") do
       "LOCAL" -> {:ex_aws, path: "../ex_aws"}
-      _ -> {:ex_aws, "~> 2.1"}
+      _ -> {:ex_aws, git: "https://github.com/fanhero/ex_aws.git"}
     end
   end
 end
